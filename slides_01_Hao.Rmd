@@ -72,6 +72,9 @@ class: inverse, center, middle
 
 In this talk, I will refer to open and reproducible research ecosystem as "open science".
   - This is not strictly accurate, there are many fields and activities that are not science.
+  
+---
+An **open, reproducible research ecosystem** requires new expecations and modes of thinking about what research is, how it is done, and how it is rewarded.
 
 ---
 # A Personal Story
@@ -165,7 +168,7 @@ class: inverse, center, middle
 
 
 ---
-### Identify your power/privilege
+# Identify your power/privilege
 
 Everyone has *different* capabilities to engage in change (more on this later)
 
@@ -175,7 +178,8 @@ Everyone has *different* capabilities to engage in change (more on this later)
 * academic status, power, positions
 * biases and prejudice
 
-### Implementation Actions
+---
+# Implementation Actions
 
 Different levels of scale
 * personal -> lab group -> field / professional society -> all of research
@@ -186,7 +190,8 @@ Different aspects of research
 * code, analysis, methods
 * publications
 
-### Where to start
+---
+# Where to start
 
 (philosophy focus on transparency)
 
@@ -199,25 +204,102 @@ contacts:
 librarians
 data management
 
-learning communities:
-advocacy groups
-reproducibiliTea
-communities of practice
+---
+# Learning Communities
 
-advocacy:
-professional society
-repro groups (FORRT, SIPS)
+* You can learn and grow in a group.  
+  You don't have to do everything yourself!
+* A group provides social norms and accountability.  
+  Dedicated time/space for learning, and goal-setting.
+* Communities do not have be about reproducibility!  
+  Learning skills or specific tools is helpful, too.
 
-research areas:
+examples:
+* ReproducibiliTea
+* The Carpentries
+* R4DS Online Community
+
+---
+# ReproducibiliTea Journal Club
+
+
+---
+# The Carpentries
+
+---
+# R4DS Online Community
+
+---
+# Find new research areas:
+
 metascience
 evidence synthesis
+
+---
+# Document Everything!
+
+* 
+* 
+* 
+
+---
+# Lab Manuals
+
+* Share institutional/organizational knowledge
+* Reduced barriers for academic "Hidden Curriculum"
+
+
+![:scale 20%](quote-Aly.png)
+.small[ -Mariam Aly <br /> https://www.nature.com/articles/d41586-018-06167-w]
+
+---
+# Creating a Lab Manual
+
+* [template]
+
+---
+class: inverse, center, middle
+
+# Beyond Individual Actions
+
+---
+# Creating Change
+
+An **open, reproducible research ecosystem** requires culture change. How can individual researches push things along?
+
+--
+
+.center[*If the problem is limited power, then the answer is to acquire more power.*]
+
+--
+
+~~Become a supervillain~~
+
+--
+
+**Collective action is a solution to limited individual power.**
+
+---
+# Avenues for Advocacy
+
+* Professional Societies (e.g. SIPS)
+* Journals
+* Other groups (e.g. FORRT, SORTEE)
+
+Guiding Questions:
+* Are they creating standards?
+* Are the standards clear, verifiable, and enforced?
+
+---
+
+
+
 
 lab group and departmental training
 
 
 ### Projects & Initiatives
 
-* collective action is a solution to limited individual power
 
 ### Open & Reproducibility groups
 
