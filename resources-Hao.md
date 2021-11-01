@@ -4,15 +4,21 @@ Hao Ye
 (to accompany "Open reproducible scholarship: How do we get there?", 2021 Nov 3 talk)
 
 
-# Skills
+# Self-guided Skill Development
 
-## General
+## Compilations
 
-* [https://www.repro4everyone.org/resources](https://www.repro4everyone.org/resources)
-  - 
+* [Reproducibility 4 Everyone Modules](https://www.repro4everyone.org/resources)
+  - Basic overview of reproducibility practices across different research activities
 
+* ["The Turing Way"](https://the-turing-way.netlify.app/welcome)
+  - Collectively-developed book (hosted by the Alan Turing Institute) on reproducible data science
 
+* [The Carpentries](https://carpentries.org/)
+  - global organization with many workshops in introductory computing and programming
 
+* ["Good enough practices in scientific computing"](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
+  - Paper from Greg Wilson et al. on fundamental skills in computational research
 
 ## File/Folder Management
 
@@ -40,11 +46,13 @@ Hao Ye
 * ["Introduction to OpenRefine"](https://arieldeardorff.github.io/OpenRefineWorkshop/index.html)
   - online lesson on OpenRefine from Ariel Deardorff, using NLM Dietary Supplements data
 
-## Programming
+* [OpenRefine LibGuide](https://guides.library.illinois.edu/openrefine)
+  - Extensive Guide to the features of OpenRefine
 
-* [https://carpentries.org/]()
-  - 
+## Intermediate Programming
 
+* ["Code Smells and Feels"](https://github.com/jennybc/code-smells-and-feels)
+  - GitHub repo from Jenny Bryan on "code smells" - also check out the related [slides](https://speakerdeck.com/jennybc/code-smells-and-feels)
 
 * ["Writing clear code"](https://kbroman.org/AdvData/14_clearcode.pdf)
   - notes from Karl Broman
@@ -63,11 +71,10 @@ Hao Ye
 * ["Packaging Data Analytical Work Reproducibly Using R (and Friends)"](https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375986)
   - paper from Ben Marwick, Carl Boettiger, and Lincoln Mullen on structuring projects as Research Compendia, with examples of varying complexity
 
-## Software Development
+## Automation
 
 * ["GitHub Actions for R"](https://www.jimhester.com/talk/2020-rsc-github-actions/)
   - Jim Hester's talk from RStudio Conf 2020 on GitHub Actions
-
 
 ## Version Control (Git / GitHub)
 
@@ -84,20 +91,46 @@ Hao Ye
  * ["Happy Git and GitHub for the useR"](https://happygitwithr.com/)
   - Detailed instructions and workflows for installing Git, connecting it with GitHub, and configuring RStudio to work with Git and GitHub
 
-## Open License
+## Licensing Open Work
 
 * ["Choose an Open Source License"](https://choosealicense.com/)
   - A guide for selecting an open source license
 
-# Documentation
-
 ## Lab Manuals
 
-Lab Manual Template 
-https://docs.google.com/document/d/1LqGdtHg0dMbj9lsCnC1QOoWzIsnSNRTSek6i3Kls2Ik/edit#
+* [Lab Manual Template](https://docs.google.com/document/d/1LqGdtHg0dMbj9lsCnC1QOoWzIsnSNRTSek6i3Kls2Ik/edit#)
+  - Template document from Balazs Aczel and multiple contributors from SIPS (I think?)
 
-Example Lab Manuals
-https://docs.google.com/spreadsheets/d/1kn4A0nR4loUOSDn9Qysd3MqFJ9cGU91dCDM6x9aga-8/edit#gid=0
+* [Example Lab Manuals](https://docs.google.com/spreadsheets/d/1kn4A0nR4loUOSDn9Qysd3MqFJ9cGU91dCDM6x9aga-8/edit#gid=0)
+  - List of example lab manuals
 
-Basic Contents of Lab Manuals
-https://twitter.com/samuelmehr/status/1139733291899080705
+* [Basic Contents of Lab Manuals](https://twitter.com/samuelmehr/status/1139733291899080705)
+  - twitter thread from Samuel Mehr on common elements in academic lab manuals
+ 
+## Training Programs
+
+* [Openscapes](https://www.openscapes.org/)
+  - mentorship program led by Julie Lowndes and Erin Robinson to train research groups in open data science
+
+* [Open Life Science](https://openlifesci.org/)
+  - mentorship program led by Bérénice Batut, Malvika Sharan, and Yo Yehudi to train life science researchers on open practices related to a new or ongoing project
+
+# Communities
+
+* [Software Sustainability Institute](https://www.software.ac.uk/)
+  - UK institute devoted to improving research software
+  
+* [ReproducibiliTea](https://reproducibilitea.org/)
+  - Distributed journal clubs that discuss papers in open science and reproducibility
+
+* [Berkeley Initiative for Transparency in the Social Sciences](https://www.bitss.org/)
+  - group working to advance transparency, reproducibility, rigor, and ethics in research
+  
+* [Framework for Open and Reproducible Research Training](https://forrt.org/)
+  - group focusing on embedding reproducibility in teaching and mentoring
+  
+* [Society for the Improvement of Psychological Science](http://improvingpsych.org/)
+  - group working to improve methods and practices in psychological science
+
+* [Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology](https://www.sortee.org/)
+  - group working to improve reliability and transparency through cultural and institutional changes in ecology and evolutionary biology
