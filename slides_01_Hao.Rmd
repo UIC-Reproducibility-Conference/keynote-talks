@@ -1,16 +1,18 @@
 ---
-title: "TITLE"
-author: "Hao Ye"
-institute: "Health Science Center Libraries, University of Florida"
+title: "Open reproducible scholarship: How do we get there?"
+author: "Hao Ye (he,him)"
+institute: "University of Florida"
 date: "(updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
+    seal: false
     css: hao-theme.css
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      beforeInit: "macros.js"
 ---
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
@@ -18,9 +20,10 @@ options(htmltools.dir.version = FALSE)
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(
-  base_color = "#09274B",
-  base_font_size = "32px", 
+style_duo_accent(
+  primary_color = "#5C2443", 
+  secondary_color = "#1B345C", 
+  base_font_size = "28px", 
   header_h1_font_size = "2.0rem",
   header_h2_font_size = "1.5rem",
   header_h3_font_size = "1.25rem", 
@@ -36,34 +39,189 @@ style_mono_accent(
                               "margin-block-end" = "0.5em"), 
                    "pre" = list("margin-top" = "0.5em", 
                               "margin-bottom" = "0.5em"), 
+                   "h3" = list("margin-block-start" = "0.5em", 
+                              "margin-block-end" = "0.5em"), 
+                   "h4" = list("margin-block-start" = "0.5em", 
+                              "margin-block-end" = "0.5em"), 
                    ".small" = list("font-size" = "80%"), 
                    ".tiny" = list("font-size" = "50%")), 
-  link_color = "#339944", 
+  link_color = "#F06C77", 
   outfile = "hao-theme.css"
 )
 ```
 
+class: inverse, center, middle
+
+# `r rmarkdown::metadata$title`
+
+.pull-left[
+### `r rmarkdown::metadata$author`
+#### `r rmarkdown::metadata$institute`
+]
+
+.pull-right[
+### ![:scale 7%](twitter_logo_blue.svg) [@Hao_and_Y](https://twitter.com/Hao_and_Y)
+]
+
+### Research Reproducibility:<br />Engaging Across Disciplines
+### 2021, November 3
+
 ---
-# Motivations
+
+# Preliminaries
+
+In this talk, I will refer to open and reproducible research ecosystem as "open science".
+  - This is not strictly accurate, there are many fields and activities that are not science.
+
+---
+# A Personal Story
+
+Once upon a time, I tried to replicate the results in a (computational) paper.
+
+1. I contacted the authors, but did not receive sample data or code, only the values of a few parameters and a reference to one of the software packages that was used.
+2. After failing to replicate the results, my research group identified other issues with the paper.
+3. We wrote up our findings, but were unable to get it published in the original venue.
+
+---
+# Lessons Learned
+
+* replicating papers is a lot of work (even when it is all computational)
+* not having data and code wastes time
+* editors, journals, publishers *mostly* do not care about replications or failed replications
+  - in our case, the original authors were asked to give technical commentary on our failed replication (this was not seen as a COI)
+
+---
+# What I Care About
+
+1. Research should be transparent and well-documented
+2. All contributions to a project should be recognized and rewarded. (e.g. data sources, data collection, software, methods development, etc.)
+
+--
+As few barriers as possible for participation in scholarship.
+
+"Open source practices can shift power" - Abigail Cabunoc Mayes
+
+---
+# Roadmap?
+
+404 Not Found
+
+???
+
+I wish I could say that I have a straightforward plan, like a "10 simple rules" paper, but that would be a lie.
+
+---
+# The Landscape
+
+* Expectations are changing...
+  - but no one has agreed on what they are
+* Practices are changing...
+  - but we don't have agreed-upon standards
+* Lots of groups have expressed interest...  
+  but not always to researcher benefit
+
+---
+# Open Science is a buffet
+
+via @chbergma
+
+Open Science encompasses many different actions, and influences and is influenced by many factors in research.
+
+Find what it means to you, and in what ways you can choose what you want to do.
+
+---
+# The Rest of the Talk
+
+1. Different motivations and approaches to reproducibility.
+2. Resources for engaging with reproducibility
 
 ---
 class: inverse, center, middle
 
-# Subheading
+# Motivations
 
 ---
-# Topic
+# What do you want to achieve?
 
-Description
-
---
-## So what?
-
-* reason!
-* another reason!
+* Mastering skills and tools for reproducibility
+* Creating work that anyone can reproduce
+* Reproducibility as a career requirement (funding, publication, jobs)
 
 ---
 
+Target specific skills and tools to learn and practice.
+
+Identify goals, and develop a plan. 
+
+Work from standards or help create standards
+
+---
+
+
+---
+class: inverse, center, middle
+
+# Resources
+
+
+---
+### Identify your power/privilege
+
+Everyone has *different* capabilities to engage in change (more on this later)
+
+* job precarity
+* tradeoffs with learning new skills
+* tradeoffs with deviating from status quo
+* academic status, power, positions
+* biases and prejudice
+
+### Implementation Actions
+
+Different levels of scale
+* personal -> lab group -> field / professional society -> all of research
+
+Different aspects of research
+* research design
+* data
+* code, analysis, methods
+* publications
+
+### Where to start
+
+(philosophy focus on transparency)
+
+tools and actions for individual actions
+
+resources:
+repro4everyone
+
+contacts:
+librarians
+data management
+
+learning communities:
+advocacy groups
+reproducibiliTea
+communities of practice
+
+advocacy:
+professional society
+repro groups (FORRT, SIPS)
+
+research areas:
+metascience
+evidence synthesis
+
+lab group and departmental training
+
+
+### Projects & Initiatives
+
+* collective action is a solution to limited individual power
+
+### Open & Reproducibility groups
+
+---
 
 ```{r, echo = FALSE, out.width = "70%"}
 #| fig.cap = "test Falafel!", 
@@ -71,11 +229,11 @@ Description
 knitr::include_graphics("image.jpg")
 ```
 
+
 ---
 
-```{r, echo = FALSE, out.width = "70%", fig.cap = "Falafel!", fig.alt = "Alt Text: A tan and white dog (retriever mix) is lying on a tile floor and looking up at the camera with his mouse open, seemingly happy. There is a food container on his body with the label 'Tzatziki' visible. (This is a visual pun on the dog's name, Falafel)"}
-knitr::include_graphics("image.jpg")
-```
+
+
 
 ---
 # Thanks
