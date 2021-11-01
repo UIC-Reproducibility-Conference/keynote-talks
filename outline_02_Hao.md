@@ -12,14 +12,18 @@
 
 ### Preliminaries
 
-* refer to open and reproducible research ecosystem as "open science"
+* This talk will refer to open and reproducible research ecosystem as "open science"
   - there are many fields and activities that are not science, but this is the common moniker
 
 ### Open Science is a buffet
 
 via @chbergma
 
-Open Science encompasses many different research activities, and is also touches upon many aspects in research.
+Open Science encompasses many different actions, and influences and is influenced by many factors in research.
+
+### Roadmap?
+
+404 Not Found
 
 ### My personal motivations
 
@@ -66,7 +70,31 @@ Different aspects of research
 
 ### Where to start
 
-{[many slides]}
+(philosophy focus on transparency)
+
+tools and actions for individual actions
+
+resources:
+repro4everyone
+
+contacts:
+librarians
+data management
+
+learning communities:
+advocacy groups
+reproducibiliTea
+communities of practice
+
+advocacy:
+professional society
+repro groups (FORRT, SIPS)
+
+research areas:
+metascience
+evidence synthesis
+
+lab group and departmental training
 
 
 ### Projects & Initiatives
