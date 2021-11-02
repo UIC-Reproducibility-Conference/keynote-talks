@@ -13,14 +13,13 @@ To build the slides locally, you need to install R, RStudio, and the [`renv`](ht
 > renv::restore()
 ~~~
 
-Then run the following two commands in the console to see our slides:
+Then run the following commands in the console to see Hao's slides:
 
 ~~~
-> rmarkdown::render('slides_01_Vicky.Rmd', 'xaringan::moon_reader')
 > rmarkdown::render('slides_02_Hao.Rmd', 'xaringan::moon_reader')
 ~~~
 
-Two files will be created: `slides_01_Vicky.html` and `slides_02_Hao.html`. Open either or both of these files in a web browser, and you will be able to see our slides.
+You will then see `slides_02_Hao.html`. Open this files in a web browser, and you will be able to see his slides.
 
 ## Talk Schedule
 
