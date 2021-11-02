@@ -7,12 +7,27 @@
 
 This repo is workspace for Vicky and Hao to collaboratively work on keynote presentations for the November 2021 virtual symposium on Research Reproducibility hosted by the University of Illinois Chicago University Library.
 
+To build the slides locally, you need to install R, RStudio, and the [`renv`](https://rstudio.github.io/renv/articles/renv.html) R package. Once you have done so, open the `UIC-repro-keynote.Rproj` file in this repository with RStudio. Once in RStudio, you can install the dependencies of this repository with `renv` like so:
+
+~~~
+> renv::restore()
+~~~
+
+Then run the following two commands in the console to see our slides:
+
+~~~
+> rmarkdown::render('slides_01_Vicky.Rmd', 'xaringan::moon_reader')
+> rmarkdown::render('slides_02_Hao.Rmd', 'xaringan::moon_reader')
+~~~
+
+Two files will be created: `slides_01_Vicky.html` and `slides_02_Hao.html`. Open either or both of these files in a web browser, and you will be able to see our slides.
+
 ## Talk Schedule
 
 |date | time | person | talk title | primary file |
 |-----|------|--------|------------|--------------|
-|Tuesday, November 2, 2021| 1300 CT | Vicky | Reproducibility is a means to an end | [script_01_Vicky.md](script_01_Vicky.md) |
-|Wednesday, November 3, 2021| 0900 CT | Hao | {TBD} | {TBD} |
+|Tuesday, November 2, 2021| 1300 CT / 1400 ET | Vicky | Reproducibility is a means to an end | [script_01_Vicky.md](script_01_Vicky.md) |
+|Wednesday, November 3, 2021| 0900 CT / 1000 ET | Hao | {TBD} | {TBD} |
 
 ## Team
 
