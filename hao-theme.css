@@ -286,6 +286,10 @@ pre {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+h1 {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
 h3 {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
@@ -294,9 +298,30 @@ h4 {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
+.large {
+  font-size: 125%;
+}
 .small {
   font-size: 80%;
 }
 .tiny {
   font-size: 50%;
+}
+.bg-blue1 {
+  background-color: #1B345C;
+  color: #FFFFFF;
+}
+.bg-blue2 {
+  background-color: #1E3B69;
+  color: #FFFFFF;
+}
+.bg-blue3 {
+  background-color: #315FA8;
+  color: #FFFFFF;
+}
+.w40 {
+  width: 40%;
+}
+.w60 {
+  width: 60%;
 }
