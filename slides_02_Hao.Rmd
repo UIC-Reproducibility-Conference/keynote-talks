@@ -69,7 +69,7 @@ class: inverse, center, middle
 .pull-left.w40[
 ### `r rmarkdown::metadata$author`
 #### `r rmarkdown::metadata$institute`
-```{r, echo = FALSE, out.width = "7%", collapse = TRUE}
+```{r, echo = FALSE, out.width = "9%", collapse = TRUE}
 #| fig.alt = "Twitter logo"
 knitr::include_graphics("images/twitter_logo_blue.svg")
 ```
@@ -85,8 +85,16 @@ knitr::include_graphics("images/twitter_logo_blue.svg")
 
 # Preliminaries
 
-In this talk, I will refer to the open and reproducible research ecosystem as **open science**.
+I will refer to the open and reproducible research ecosystem as **open science**.
   - This is inaccurate, because there are many disciplines that exist outside of science.
+
+---
+class: center, middle
+
+```{r, echo = FALSE, out.width = "100%", collapse = TRUE}
+#| fig.alt = "Twitter logo"
+knitr::include_graphics("images/open-science-umbrella.png")
+```
 
 ---
 # Roadmap?
@@ -98,17 +106,17 @@ knitr::include_graphics("images/maze.png")
 
 ???
 
-I wish I could say that I have a straightforward plan, but that would be a lie.
+I wish I could say that I have a straightforward plan or a simple technological solution, but this isn't a TED talk, and I'm not trying to sell you anything.
 
 ---
 layout: true
 class: split-three
 
 .row.bg-blue1[.content.vmiddle[
-.large[Researchers ask different questions and solve different problems.]
+.large[Researchers ask different questions and work on different problems.]
 ]]
 .row.bg-blue2[.content.vmiddle[
-.large[Researchers have different approaches, methods, and modes of work.]
+.large[Researchers have different approaches, methods, and modes of working.]
 ]]
 .row.bg-blue3[.content.vmiddle[
 .large[There is no one-size-fits-all solution!]
@@ -142,18 +150,26 @@ Let me tell you a little bit about how I think about it.
 ---
 # What I Care About
 
-1. All components of research should be transparent and documented (as much as possible).
-2. All contributions to a project should be recognized and rewarded. (e.g. data sources, data collection, software, methods development, etc.)
+1. **Openness**  
+  Everything should be open, transparent, and documented (as much as possible).
+2. **Recognition**  
+  All the work in all the facets of research should be recognized and rewarded. (e.g. data sources, data collection, software, methods development, etc.)
 
 --
 
-.center[**I work to to dismantle barriers to participation in scholarship.**]
+****
+
+.center[**Remove barriers to participate in open science.**]
+
+???
+
+I think these are just the core ideas of good scholarship, typically thought of in citation terms, but applied broadly.
 
 ---
 # The Rest of the Talk
 
-1. How to think about reproducibility
-2. Ways to engage with reproducibility
+1. Documentation
+2. How to think about working open
 3. Resources for taking initial steps
 
 ???
@@ -163,21 +179,15 @@ Researchers are not monolithic! We all have different starting points, different
 ---
 class: inverse, center, middle
 
-# Principles for thinking about reproducibility
-
----
-class: center, middle
-
-# "The core of open science is radical transparency."
-## Vicky Rampin
+# The Importance of Being ~~Earnest~~ Radically Transparent
 
 ???
 
-Good and accurate documentation is important! Here's my own personal story where I learned the importance of good documentation.
+In practice, this means good and accurate documentation. So let me tell you how I learned the importance of good documentation.
 
 ---
 layout: true
-class: split-three with-thick-border middle
+class: split-three middle
 
 .column.bg-main1[.content.vmiddle[
 ```{r, echo = FALSE, collapse = TRUE}
@@ -207,20 +217,71 @@ count: false
 count: false
 ---
 layout: false
-# Metadata
+# Good documentation saves time!
 
-**metadata** - data that describes other data.
-
-### Accurate metadata is important!
-
-Datafiles should have documentation that describe:
-* which project the data is for
-* who/what/when/where/how the data were collected
-* data structure, measurement units, etc.
+Documentation requires initial time investment, but saves time later.
+* answering questions
+* onboarding new people
+* creating shared knowledge
 
 ???
 
-How do you think about principles for documenting and sharing research works?
+One of my favorite examples of a practice in good documentation is the Lab Manual.
+---
+# Lab Manuals
+
+* A repository of institutional/organizational knowledge
+* Lab practices, academic culture, campus resources, logistical information
+
+.center[![:scale 25%](images/quote-Aly.png)
+*-Mariam Aly* <br /> .small[https://www.nature.com/articles/d41586-018-06167-w]]
+
+---
+## Basic Elements of Lab Manuals
+(via [Samuel Mehr](https://twitter.com/samuelmehr/status/1139733291899080705))
+
+.pull-left.small[
+* Mission Statement
+* Roles and Expectations
+* Open Science
+* Communication
+* Logistics
+* Internal Resources
+* External Resources
+* Onboarding
+* Recurring Events
+* Day-to-day
+* Behavior
+]
+.pull-right.small[
+* Ethics and Safety
+* Engagement
+* How to Run Experiments
+* Data Analysis
+* Publications & Authorship
+* Conferences
+* Money
+* Offboarding
+* Mentorship and Development
+* What to do if you need help
+* Reading list
+]
+
+???
+
+Similar content as an employee handbook.
+
+---
+# Why
+
+1. It saves time in answering questions
+2. Accepting updates/contributions from lab members promotes community
+3. People have different backgrounds, experiences, and may not be familiar with norms in your organization. **#HiddenCurriculum**
+
+---
+class: inverse, center, middle
+
+# Principles for Working Open
 
 ---
 # FAIR
@@ -261,7 +322,6 @@ And including Equitable
 * Is the research object in a open format?
   - e.g. CSV for tabular data
 * Does computer code run on open (non-proprietary) systems/platforms?
-* Are materials 
 
 ---
 # Reusable
@@ -270,6 +330,7 @@ And including Equitable
   - The raw version of data (for auditing) and the cleaned version (for analysis)
   - For code, installation instructions and defining dependencies
   - For methods and protocols, sufficient detail about procedures and materials (e.g. RRID)
+* Does the research object have a license that enables reuse?
 
 ---
 # Equitable
@@ -278,19 +339,23 @@ And including Equitable
 * Is the research object shared following ethical principles? (being mindful of PII, potential harmful impacts, etc.)
 
 ---
-# Lab Manuals
+## Is the Lab Manual FAIRE?
 
-* Share institutional/organizational knowledge
-* Reduced barriers for academic "Hidden Curriculum"
+**Findable**  
+Is there a link on the lab website?
 
+**Accessible**  
+Does the link resolve to the correct document?
 
-![:scale 20%](images/quote-Aly.png)
-.small[ -Mariam Aly <br /> https://www.nature.com/articles/d41586-018-06167-w]
+**Interoperable**  
+Is it easy to navigate, and make edits to?
 
----
-# Creating a Lab Manual
+**Reusable**  
+Are other labs able to make derivative works?
 
-* [template]
+**Equitable**  
+Does the lab manual contain info for marginalized groups (e.g. LGBTQ, international students, disabilities)?
+
 
 ---
 class: inverse, center, middle
@@ -298,6 +363,9 @@ class: inverse, center, middle
 # Getting Started
 
 ---
+# Research Activities
+
+.center[*{insert infographic of your choice}*]
 
 There are many different aspects of research that could be more open and reproducible:
 * research design
@@ -329,52 +397,38 @@ knitr::include_graphics("images/its-dangerous-to-go-alone.jpg")
 
 * You can learn and grow in a group.  
   You don't have to do everything yourself!
-* A group provides social norms and accountability.  
-  Dedicated time/space for learning, and goal-setting.
+* Learning a new skill takes time and practice.  
+  A group provides social norms and accountability, with dedicated time/space for practice.
+
+???
+short-form interventions (like bootcamps) aren't sufficient on their own
 
 ---
-class: center, middle
+# Core Skills
 
-# Learning Communities for Core Skills
-
----
-layout: true
-class: split-three
-
-.row.bg-blue1[.split-two[
-  .column[.content.vmiddle[
-    ## [The Carpentries](https://carpentries.org/)
-  ]]
-  .column[.content.vmiddle[
-    Workshops for essential data and computational skills
-  ]]
-]]
-.row.bg-blue2[.split-two[
-  .column[.content.vmiddle[
-    ## [Reproducibility 4 Everyone](https://repro4everyone.org/)
-  ]]
-  .column[.content.vmiddle[
-    Workshops for reproducible research practices
-  ]]
-]]
-.row.bg-blue3[.split-two[
-  .column[.content.vmiddle[
-    ## [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
-  ]]
-  .column[.content.vmiddle[
-    Weekly event from the R4DS Online Learning Community to practice data wrangling and data visualization.
-  ]]
-]]
----
-count: false
+** [The Carpentries](https://carpentries.org/)**  
+  Workshops for essential data and computational skills
+    
+** [Reproducibility 4 Everyone](https://repro4everyone.org/)**  
+  Workshops for reproducible research practices
+    
+** [TidyTuesday](https://github.com/rfordatascience/tidytuesday)**  
+  Weekly event from the R4DS Online Learning Community to practice data wrangling and data visualization.
 
 ---
-layout: false
-# Mentorship
+# Mentored Experiences
 
-OpenScapes
-OpenLifeScience
+Cohort-based programs with individual and group mentorship.
 
+** [OpenScapes]()**  
+  5-month Champions program for lab groups.
+  
+** [Open Life Science](https://openlifesci.org/)**  
+  16-week program for individuals or small group projects (open-science related).
+
+???
+
+That's a lot of time! 
 
 ---
 layout: false
@@ -399,145 +453,63 @@ Everyone has *different* capabilities to engage in change
 * academic status, power, positions
 * biases and prejudice
 
----
-
-Where do you have influence?
-
-Where can you find allies?
-  - shared values and working towards a common vision
-  - shared objective and you can achieve a win-win outcome
-
-
----
-# Finding more power
-
-.center[*If the problem is limited power, then the answer is to acquire more power.*]
-
---
-
-~~Become a supervillain~~
-
---
-
+???
+If the problem is limited power, then the answer is to acquire more power.
+No, don't become a supervillain.
 **Collective action is a solution to limited individual power.**
 
 ---
-layout: false
-class: center, middle
 
+### Where do you have influence?
+  - in your lab
+  - in your department
+  - in your professional society
+
+### Where can you find allies?
+  - shared values and working towards a common vision
+  - shared objective and you can achieve a win-win outcome
+
+---
 # Reproducibility Affinity Groups
 
----
-layout: true
-class: split-three
+** [ReproducibiliTea](https://reproducibilitea.org/)**  
+  Globally-distributed, local journal club chapters to discuss open science and reproducibility
+  
+** [ReproHack](https://www.reprohack.org/)**  
+  Hackathons to practice reproducing published research  
+  [Nov 18. launch of ReproHack Hub](https://www.reprohack.org/event/11/)
 
-.row.bg-blue1[.split-two[
-  .column[.content.vmiddle[
-    ## [ReproducibiliTea](https://reproducibilitea.org/)
-  ]]
-  .column[.content.vmiddle[
-    Globally-distributed, local journal club chapters to discuss open science and reproducibility 
-  ]]
-]]
-.row.bg-blue2[.split-two[
-  .column[.content.vmiddle[
-    ## [ReproHack](https://www.reprohack.org/)
-  ]]
-  .column[.content.vmiddle[
-    Hackathons to practice reproducing published research
-    
-    [ReproHack Hub launch Nov 18](https://www.reprohack.org/event/11/)
-  ]]
-]]
-.row.bg-blue3[.split-two[
-  .column[.content.vmiddle[
-    ## [BITSS](https://www.bitss.org/)
-  ]]
-  .column[.content.vmiddle[
-    Berkeley Initiative for Transparency in the Social Sciences
-  ]]
-]]
----
-count: false
+** [BITSS](https://www.bitss.org/)**  
+  Berkeley Initiative for Transparency in the Social Sciences
 
 ---
-layout: false
-class: center, middle
-
 # Research Software Affinity Groups
 
+** [PyOpenSci](https://www.pyopensci.org/)**  
+  Python packages for open and reproducible research
+  
+** [ROpenSci](https://ropensci.org/)**  
+  R packages for open and reproducible research
+
+** [Software Sustainability Institute](https://www.software.ac.uk/)**  
+  Practices for better research software
+
 ---
-layout: true
-class: split-three
-
-.row.bg-blue1[.split-two[
-  .column[.content.vmiddle[
-    ## [PyOpenSci](https://www.pyopensci.org/)
-  ]]
-  .column[.content.vmiddle[
-    Python packages for open and reproducible research
-  ]]
-]]
-.row.bg-blue2[.split-two[
-  .column[.content.vmiddle[
-    ## [ROpenSci](https://ropensci.org/)
-  ]]
-  .column[.content.vmiddle[
-    R packages for open and reproducible research
-  ]]
-]]
-.row.bg-blue3[.split-two[
-  .column[.content.vmiddle[
-    ## [Software Sustainability Institute](https://www.software.ac.uk/)
-  ]]
-  .column[.content.vmiddle[
-    best practices for better research software
-  ]]
-]]
----
-count: false
-
-class: center, middle
-
 # Advocacy Groups
 
----
-layout: true
-class: split-three
+** [SIPS](http://improvingpsych.org/)**  
+  Society for the Improvement of Psychological Science
+  
+** [SORTEE](https://www.sortee.org/)**  
+  Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology
 
-.row.bg-blue1[.split-two[
-  .column[.content.vmiddle[
-    ## [SIPS](http://improvingpsych.org/)
-  ]]
-  .column[.content.vmiddle[
-    Society for the Improvement of Psychological Science
-  ]]
-]]
-.row.bg-blue2[.split-two[
-  .column[.content.vmiddle[
-    ## [SORTEE](https://www.sortee.org/)
-  ]]
-  .column[.content.vmiddle[
-    Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology
-  ]]
-]]
-.row.bg-blue3[.split-two[
-  .column[.content.vmiddle[
-    ## [FORRT](https://forrt.org/)
-  ]]
-  .column[.content.vmiddle[
-    Framework for Open and Reproducible Research Training (embedding reproducibility in basic research training)
-  ]]
-]]
----
-count: false
----
-layout: false
+** [FORRT](https://forrt.org/)**  
+  Framework for Open and Reproducible Research Training (embedding reproducibility in basic research training)
 
 ---
 # Summary
 
-1. There are many areas to focus on and different scales of change. Pick one!
+1. There are many research activities to focus on. Pick one!
 2. Document _everything_.
 3. Find friends to learn together.
 4. Bring allies to make culture change.
@@ -550,39 +522,3 @@ layout: false
 ]
 
 ---
-# Thanks
-
-
----
-# A Personal Story
-
-Once upon a time, I tried to replicate the results in a (computational) paper.
-
-1. I contacted the authors and received some information about parameter values and software used, but not the full data or code.
-2. After failing to replicate the results, my research group identified other issues with the results.
-3. We wrote up our findings, but were unable to get it published in the original venue.
-
----
-
-# Lessons Learned
-
-* replicating papers is a lot of work (even when it requires no new experiments or data collection)
-* not having data and code is a huge waste of time
-* it is difficult to get replications published - journals, editors, and publishers are not always motivated
-
----
-
-# What do you want to achieve?
-
-* Mastering skills and tools for reproducibility
-* Creating work that anyone can reproduce
-* Reproducibility as a career requirement (funding, publication, jobs)
-
----
-
-Target specific skills and tools to learn and practice.
-
-Identify goals, and develop a plan. 
-
-Work from standards or help create standards
-
