@@ -7,7 +7,8 @@ output:
   xaringan::moon_reader:
     lib_dir: libs
     seal: false
-    css: ["kunoichi", "ninjutsu", "hao-theme.css"]
+    css: ["kunoichi", "ninjutsu", "assets/ninpo.css", "hao-theme.css"]
+    self_contained: false
     nature:
       highlightStyle: github
       highlightLines: true
@@ -39,12 +40,23 @@ style_duo_accent(
                               "margin-block-end" = "0.5em"), 
                    "pre" = list("margin-top" = "0.5em", 
                               "margin-bottom" = "0.5em"), 
+                   "h1" = list("margin-block-start" = "1em", 
+                              "margin-block-end" = "1em"),
                    "h3" = list("margin-block-start" = "0.5em", 
                               "margin-block-end" = "0.5em"), 
                    "h4" = list("margin-block-start" = "0.5em", 
-                              "margin-block-end" = "0.5em"), 
+                               "margin-block-end" = "0.5em"), 
+                   ".large" = list("font-size" = "125%"), 
                    ".small" = list("font-size" = "80%"), 
-                   ".tiny" = list("font-size" = "50%")), 
+                   ".tiny" = list("font-size" = "50%"),
+                   ".bg-blue1" = list("background-color" = "#1B345C", 
+                                      "color" = "#FFFFFF"), 
+                   ".bg-blue2" = list("background-color" = "#1E3B69", 
+                                      "color" = "#FFFFFF"),
+                   ".bg-blue3" = list("background-color" = "#315FA8", 
+                                      "color" = "#FFFFFF"),
+                   ".w40" = list("width" = "40%"), 
+                    ".w60" = list("width" = "60%")), 
   link_color = "#F06C77", 
   outfile = "hao-theme.css"
 )
@@ -54,118 +66,53 @@ class: inverse, center, middle
 
 # `r rmarkdown::metadata$title`
 
-#### 2021, November 3
-### Research Reproducibility:<br />Engaging Across Disciplines
-
-
-.pull-left[
+.pull-left.w40[
 ### `r rmarkdown::metadata$author`
 #### `r rmarkdown::metadata$institute`
+```{r, echo = FALSE, out.width = "7%", collapse = TRUE}
+#| fig.alt = "Twitter logo"
+knitr::include_graphics("images/twitter_logo_blue.svg")
+```
+[@Hao_and_Y](https://twitter.com/Hao_and_Y)
 ]
 
-.pull-right[
-### ![:scale 7%](images/twitter_logo_blue.svg) [@Hao_and_Y](https://twitter.com/Hao_and_Y)
+.pull-right.w60[
+### Research Reproducibility:<br />Engaging Across Disciplines
+#### 2021, November 3
 ]
 
 ---
 
 # Preliminaries
 
-In this talk, I refer to the open and reproducible research ecosystem as **open science**.
-  - This is inaccurate, because there are many fields of research that are outside science.
-  
----
-
-An **open, reproducible research ecosystem** requires new expecations and modes of thinking about what research is, how it is done, and how it is rewarded.
-
----
-# A Personal Story
-
-Once upon a time, I tried to replicate the results in a (computational) paper.
-
-1. I contacted the authors, but did not receive sample data or code, only the values of a few parameters and a reference to one of the software packages that was used.
-2. After failing to replicate the results, my research group identified other issues with the paper.
-3. We wrote up our findings, but were unable to get it published in the original venue.
-
----
-# Lessons Learned
-
-* replicating papers is a lot of work (even when it is all computational)
-* not having data and code wastes time
-* a lot of things have to go right for replications (failed or not) to be published - journals, editors, and publishers are not always motivated to do so
-  - in our case, the original authors were asked to give technical commentary on our work, and this was seen by and accepted as fact by reviewers
-
----
-# What I Care About
-
-1. Research should be transparent and documented.
-2. All contributions to a project should be recognized and rewarded. (e.g. data sources, data collection, software, methods development, etc.)
-
---
-
-i.e. as few barriers as possible for participation in scholarship.
+In this talk, I will refer to the open and reproducible research ecosystem as **open science**.
+  - This is inaccurate, because there are many disciplines that exist outside of science.
 
 ---
 # Roadmap?
 
-404 Not Found
+```{r, echo = FALSE, out.width = "90%", collapse = TRUE}
+#| fig.alt = "Stylized art of a man in a purple suit jacket and a woman with red shirt and gray skirt looking at a map with directions and standing outside a hedge maze."
+knitr::include_graphics("images/maze.png")
+```
 
 ???
 
-I wish I could say that I have a straightforward plan, like a "10 simple rules" paper, but that would be a lie.
-
----
-# Open Science is a buffet
-
-via @chbergma
-
-Open Science encompasses many different actions, and influences and is influenced by many factors in research.
-
----
-# Navigating the path to Open Science
-
-Researchers are not monolithic! We all have different starting points, different goals that we strive for, and different preferred approaches for reaching those destinations.
-
----
-# 
-
-It's dangerous out there, don't go alone.
-
----
-# The Rest of the Talk
-
-1. Core elements of reproducibility.
-2. Ways to engage with reproducibility.
-3. Resources for taking initial steps.
-
----
-class: inverse, center, middle
-
-# Core Elements
-
----
-# Documentation
-
-
-
----
-# Metadata
-
-**metadata** - data that describes other data.
+I wish I could say that I have a straightforward plan, but that would be a lie.
 
 ---
 layout: true
 class: split-three
 
-.column.bg-main1[
-    ![](images/macintosh.png)
-]
-.column.bg-main2[
-    ![](images/floppy.jpg)
-]
-.column.bg-main3[
-c
-]
+.row.bg-blue1[.content[
+.large[Researchers ask different questions and solve different problems.]
+]]
+.row.bg-blue2[.content[
+.large[Researchers have different approaches, methods, and modes of work.]
+]]
+.row.bg-blue3[.content[
+.large[There is no one-size-fits-all solution!]
+]]
 
 ---
 class: show-100
@@ -174,7 +121,92 @@ class: show-110
 count: false
 ---
 count: false
+
+???
+
+So what does this mean?
 ---
+layout: false
+# Open Science is a buffet
+
+.center[
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">So glad the buffet metaphor is catching on, there are so many solutions out there. Don&#39;t try to stuff yourself on everything, select what works for this study and let&#39;s steadily improve our fields... <a href="https://twitter.com/hashtag/openscience?src=hash&amp;ref_src=twsrc%5Etfw">#openscience</a> <a href="https://t.co/QrtqMa6HHM">https://t.co/QrtqMa6HHM</a></p>&mdash; Dr. Christina Bergmann (@chbergma) <a href="https://twitter.com/chbergma/status/1104338904646385665?ref_src=twsrc%5Etfw">March 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+]
+
+???
+
+Open Science is a buffet. There are many skills you can learn, actions you can take, ways of thinking you can adopt.
+
+Let me tell you a little bit about how I think about it.
+
+---
+# What I Care About
+
+1. All components of research should be transparent and documented (as much as possible).
+2. All contributions to a project should be recognized and rewarded. (e.g. data sources, data collection, software, methods development, etc.)
+
+--
+
+.center[**I work to to dismantle barriers to participation in scholarship.**]
+
+---
+# The Rest of the Talk
+
+1. How to think about reproducibility
+2. Ways to engage with reproducibility
+3. Resources for taking initial steps
+
+???
+
+Researchers are not monolithic! We all have different starting points, different goals that we strive for, and different preferred approaches for reaching those destinations.
+
+---
+class: inverse, center, middle
+
+# Principles for thinking about reproducibility
+
+---
+class: center, middle
+
+# "The core of open science is radical transparency."
+## Vicky Rampin
+
+???
+
+Good and accurate documentation is important! Here's my own personal story where I learned the importance of good documentation.
+
+---
+layout: true
+class: split-three with-thick-border middle
+
+.column.bg-main1[.content.vmiddle[
+```{r, echo = FALSE, collapse = TRUE}
+#| fig.alt = "The original Macintosh personal computer. It is a yellow-beige box with a small rectangular screen and 3.5 inch floppy-disk drive slot on the front surface. The screen is on, and shows the grayscale interface of the Macintosh operating system."
+knitr::include_graphics("images/macintosh.png")
+```
+]]
+.column.bg-main2[.content.vmiddle[
+    ![](images/floppy.jpg)
+]]
+.column.bg-main3[.content.vmiddle[
+```{r, echo = FALSE, collapse = TRUE}
+#| fig.alt = "Surprised Pikachu face. A yellow pokemon with sharp ears tipped in black and red cheeks has its mouth open in a look of surprise."
+knitr::include_graphics("images/surprised_pikachu.png")
+```
+]]
+
+---
+class: show-000
+---
+class: show-100
+count: false
+---
+class: show-110
+count: false
+---
+count: false
+---
+layout: false
 # Metadata
 
 **metadata** - data that describes other data.
@@ -186,72 +218,101 @@ Datafiles should have documentation that describe:
 * who/what/when/where/how the data were collected
 * data structure, measurement units, etc.
 
+???
+
+How do you think about principles for documenting and sharing research works?
+
+---
+# FAIR
+
+FAIR principles were originally intended for scientific data [Wilkinson et al. 2016](https://www.nature.com/articles/sdata201618)
+
+* Findable
+* Accessible
+* Interoperable
+* Reusable
+--
+
+* Equitable
+
+???
+I'm going to make two modifications - extending these principles to research outputs broadly defined.
+And including Equitable
+
+---
+# Findable
+
+* Does the research object have a unique DOI (separate from the publication it might be associated with)?
+* Does the description include information about the authors, the associated publications, and funding sources?
+* Does the description follow community standards for keywords, tags, etc.?
+
+
+---
+# Accessible
+
+* Is the research object retrievable? (Does the DOI link work?)
+  - By anyone, or with appropriate permissions if the content is restricted/sensitive.
+* Is the research object on an available platform? (a standard repository)
+
+
+---
+# Interoperable
+
+* Is the research object in a open format?
+  - e.g. CSV for tabular data
+* Does computer code run on open (non-proprietary) systems/platforms?
+* Are materials 
+
+---
+# Reusable
+
+* Is the research object being shared in a form that is usable by others?
+  - The raw version of data (for auditing) and the cleaned version (for analysis)
+  - For code, installation instructions and defining dependencies
+  - For methods and protocols, sufficient detail about procedures and materials (e.g. RRID)
+
+---
+# Equitable
+
+* Was the data collected ethically (e.g. with consent, stakeholder participation, etc.)?
+* Is the research object shared following ethical principles? (being mindful of PII, potential harmful impacts, etc.)
+
 ---
 class: inverse, center, middle
 
-# Approaches
+# Getting Started
 
 ---
+# Research Activities are very diverse
 
-# What do you want to achieve?
-
-* Mastering skills and tools for reproducibility
-* Creating work that anyone can reproduce
-* Reproducibility as a career requirement (funding, publication, jobs)
-
----
-
-Target specific skills and tools to learn and practice.
-
-Identify goals, and develop a plan. 
-
-Work from standards or help create standards
-
----
-
-
----
-class: inverse, center, middle
-
-# Resources
-
-
----
-# Identify your power/privilege
-
-Everyone has *different* capabilities to engage in change (more on this later)
-
-* job precarity
-* tradeoffs with learning new skills
-* tradeoffs with deviating from status quo
-* academic status, power, positions
-* biases and prejudice
-
----
-# Implementation Actions
-
-Different levels of scale
-* personal -> lab group -> field / professional society -> all of research
-
-Different aspects of research
+There are both accepted and ongoing work to bring openness and reproducibility to different aspects of research, including:
 * research design
 * data
 * code, analysis, methods
 * publications
 
 ---
-# Where to start
+# Materials
 
-(philosophy focus on transparency)
+Reproducibility 4 Everyone
+The Carpentries
 
-tools and actions for individual actions
+---
+# 
 
-resources:
-repro4everyone
+```{r, echo = FALSE, collapse = TRUE}
+#| fig.alt = "asdf"
+knitr::include_graphics("images/its-dangerous-to-go-alone.jpg")
+```
 
-contacts:
-librarians
-data management
+
+---
+# University Research Support
+
+* Librarians
+* Office Sponsored Research
+* Research Integrity / Compliance Office 
+* Data Management, Research Software Engineering, Research Computing
 
 ---
 # Learning Communities
@@ -263,11 +324,6 @@ data management
 * Communities do not have be about reproducibility!  
   Learning skills or specific tools is helpful, too.
 
-examples:
-* ReproducibiliTea
-* The Carpentries
-* R4DS Online Community
-
 ---
 # ReproducibiliTea Journal Club
 
@@ -278,18 +334,40 @@ examples:
 ---
 # R4DS Online Community
 
----
-# Find new research areas:
-
-metascience
-evidence synthesis
 
 ---
-# Document Everything!
+# Reproducibility 4 Everyone
 
-* 
-* 
-* 
+
+---
+class: center, middle
+
+# What about culture change?
+
+---
+
+# Creating Change
+
+An **open, reproducible research ecosystem** requires culture change. How can individual researches push things along?
+
+---
+# Identify your power/privilege
+
+Everyone has *different* capabilities to engage in change
+
+* job precarity
+* opportunity cost for learning new skills
+* tradeoffs with deviating from status quo
+* academic status, power, positions
+* biases and prejudice
+
+---
+
+Where do you have influence?
+
+Where can you find allies?
+  - shared values and working towards a common vision
+  - shared objective and you can achieve a win-win outcome
 
 ---
 # Lab Manuals
@@ -306,17 +384,9 @@ evidence synthesis
 
 * [template]
 
----
-class: inverse, center, middle
-
-# Beyond Individual Actions
 
 ---
-# Creating Change
-
-An **open, reproducible research ecosystem** requires culture change. How can individual researches push things along?
-
---
+# Finding more power
 
 .center[*If the problem is limited power, then the answer is to acquire more power.*]
 
@@ -328,6 +398,11 @@ An **open, reproducible research ecosystem** requires culture change. How can in
 
 **Collective action is a solution to limited individual power.**
 
+---
+# Implementation Actions
+
+Different levels of scale
+* personal -> lab group -> field / professional society -> all of research
 ---
 # Avenues for Advocacy
 
@@ -346,27 +421,47 @@ Guiding Questions:
 
 ---
 
-lab group and departmental training
 
-
-### Projects & Initiatives
-
-
-### Open & Reproducibility groups
-
----
-
-```{r, echo = FALSE, out.width = "70%"}
-#| fig.cap = "test Falafel!", 
-#| fig.alt = "test alt text"
-# knitr::include_graphics("image.jpg")
-```
 
 
 ---
 
+---
+
+# What do you want to achieve?
+
+* Mastering skills and tools for reproducibility
+* Creating work that anyone can reproduce
+* Reproducibility as a career requirement (funding, publication, jobs)
+
+---
+
+Target specific skills and tools to learn and practice.
+
+Identify goals, and develop a plan. 
+
+Work from standards or help create standards
 
 
 
 ---
 # Thanks
+
+
+---
+# A Personal Story
+
+Once upon a time, I tried to replicate the results in a (computational) paper.
+
+1. I contacted the authors and received some information about parameter values and software used, but not the full data or code.
+2. After failing to replicate the results, my research group identified other issues with the results.
+3. We wrote up our findings, but were unable to get it published in the original venue.
+
+---
+
+# Lessons Learned
+
+* replicating papers is a lot of work (even when it requires no new experiments or data collection)
+* not having data and code is a huge waste of time
+* it is difficult to get replications published - journals, editors, and publishers are not always motivated
+
