@@ -1,5 +1,5 @@
 ---
-title: "Open reproducible scholarship: How do we get there?"
+title: "Open reproducible research: How do we get there?"
 author: "Hao Ye (he,him)"
 institute: "University of Florida"
 date: "(updated: `r Sys.Date()`)"
@@ -272,7 +272,7 @@ One of my favorite examples of a practice in good documentation is the Lab Manua
 Similar content as an employee handbook.
 
 ---
-# Why
+# How does a Lab Manual help?
 
 1. It saves time in answering questions
 2. Accepting updates/contributions from lab members promotes community
