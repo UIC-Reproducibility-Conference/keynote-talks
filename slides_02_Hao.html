@@ -1,83 +1,35 @@
----
-title: "Open reproducible research: How do we get there?"
-author: "Hao Ye (he,him)"
-institute: "University of Florida"
-date: "(updated: `r Sys.Date()`)"
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    seal: false
-    css: ["kunoichi", "ninjutsu", "assets/ninpo.css", "hao-theme.css"]
-    self_contained: false
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      beforeInit: "macros.js"
----
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Open reproducible research: How do we get there?</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Hao Ye (he,him)" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/kunoichi.css" rel="stylesheet" />
+    <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/ninpo.css" type="text/css" />
+    <link rel="stylesheet" href="hao-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-library(xaringanthemer)
-style_duo_accent(
-  primary_color = "#5C2443", 
-  secondary_color = "#1B345C", 
-  base_font_size = "28px", 
-  header_h1_font_size = "2.0rem",
-  header_h2_font_size = "1.5rem",
-  header_h3_font_size = "1.25rem", 
-  header_background_content_padding_top = "2rem", 
-  header_font_google = google_font("Lato"),
-  text_font_google   = google_font("Montserrat", "300", "300i", "500"),
-  code_font_google   = google_font("Source Code Pro", "300", "500"), 
-  extra_css = list("p" = list("margin-block-start" = "0.5em", 
-                              "margin-block-end" = "0.5em"), 
-                   "ul" = list("margin-block-start" = "0.5em", 
-                              "margin-block-end" = "0.5em"), 
-                   "li" = list("margin-block-start" = "0.5em", 
-                              "margin-block-end" = "0.5em"), 
-                   "pre" = list("margin-top" = "0.5em", 
-                              "margin-bottom" = "0.5em"), 
-                   "h1" = list("margin-block-start" = "1em", 
-                              "margin-block-end" = "1em"),
-                   "h3" = list("margin-block-start" = "0.5em", 
-                              "margin-block-end" = "0.5em"), 
-                   "h4" = list("margin-block-start" = "0.5em", 
-                               "margin-block-end" = "0.5em"), 
-                   ".large" = list("font-size" = "125%"), 
-                   ".small" = list("font-size" = "80%"), 
-                   ".tiny" = list("font-size" = "50%"),
-                   ".bg-blue1" = list("background-color" = "#1B345C", 
-                                      "color" = "#FFFFFF"), 
-                   ".bg-blue2" = list("background-color" = "#1E3B69", 
-                                      "color" = "#FFFFFF"),
-                   ".bg-blue3" = list("background-color" = "#315FA8", 
-                                      "color" = "#FFFFFF"),
-                   ".w40" = list("width" = "40%"), 
-                    ".w60" = list("width" = "60%")), 
-  link_color = "#F06C77", 
-  outfile = "hao-theme.css"
-)
-```
+
+
+
 
 class: inverse, center, middle
 
-# `r rmarkdown::metadata$title`
+# Open reproducible research: How do we get there?
 
 .pull-left.w40[
-### `r rmarkdown::metadata$author`
-#### `r rmarkdown::metadata$institute`
-```{r, echo = FALSE, out.width = "9%", collapse = TRUE}
-#| fig.alt = "Twitter logo"
-knitr::include_graphics("images/twitter_logo_blue.svg")
-```
+### Hao Ye (he,him)
+#### University of Florida
+&lt;img src="images/twitter_logo_blue.svg" title="Twitter logo" alt="Twitter logo" width="9%" /&gt;
 [@Hao_and_Y](https://twitter.com/Hao_and_Y)
 ]
 
 .pull-right.w60[
-### Research Reproducibility:<br />Engaging Across Disciplines
+### Research Reproducibility:&lt;br /&gt;Engaging Across Disciplines
 #### 2021, November 3
 ]
 
@@ -91,18 +43,12 @@ I will refer to the open and reproducible research ecosystem as **open science**
 ---
 class: center, middle
 
-```{r, echo = FALSE, out.width = "100%", collapse = TRUE}
-#| fig.alt = "Twitter logo"
-knitr::include_graphics("images/open-science-umbrella.png")
-```
+&lt;img src="images/open-science-umbrella.png" title="Twitter logo" alt="Twitter logo" width="100%" /&gt;
 
 ---
 # Roadmap?
 
-```{r, echo = FALSE, out.width = "90%", collapse = TRUE}
-#| fig.alt = "Stylized art of a man in a purple suit jacket and a woman with red shirt and gray skirt looking at a map with directions and standing outside a hedge maze."
-knitr::include_graphics("images/maze.png")
-```
+&lt;img src="images/maze.png" title="Stylized art of a man in a purple suit jacket and a woman with red shirt and gray skirt looking at a map with directions and standing outside a hedge maze." alt="Stylized art of a man in a purple suit jacket and a woman with red shirt and gray skirt looking at a map with directions and standing outside a hedge maze." width="90%" /&gt;
 
 ???
 
@@ -138,7 +84,7 @@ layout: false
 # Open Science is a buffet
 
 .center[
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">So glad the buffet metaphor is catching on, there are so many solutions out there. Don&#39;t try to stuff yourself on everything, select what works for this study and let&#39;s steadily improve our fields... <a href="https://twitter.com/hashtag/openscience?src=hash&amp;ref_src=twsrc%5Etfw">#openscience</a> <a href="https://t.co/QrtqMa6HHM">https://t.co/QrtqMa6HHM</a></p>&mdash; Dr. Christina Bergmann (@chbergma) <a href="https://twitter.com/chbergma/status/1104338904646385665?ref_src=twsrc%5Etfw">March 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;So glad the buffet metaphor is catching on, there are so many solutions out there. Don&amp;#39;t try to stuff yourself on everything, select what works for this study and let&amp;#39;s steadily improve our fields... &lt;a href="https://twitter.com/hashtag/openscience?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#openscience&lt;/a&gt; &lt;a href="https://t.co/QrtqMa6HHM"&gt;https://t.co/QrtqMa6HHM&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Christina Bergmann (@chbergma) &lt;a href="https://twitter.com/chbergma/status/1104338904646385665?ref_src=twsrc%5Etfw"&gt;March 9, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 ]
 
 ???
@@ -190,19 +136,13 @@ layout: true
 class: split-three middle
 
 .column.bg-main1[.content.vmiddle[
-```{r, echo = FALSE, collapse = TRUE}
-#| fig.alt = "The original Macintosh personal computer. It is a yellow-beige box with a small rectangular screen and 3.5 inch floppy-disk drive slot on the front surface. The screen is on, and shows the grayscale interface of the Macintosh operating system."
-knitr::include_graphics("images/macintosh.png")
-```
+&lt;img src="images/macintosh.png" title="The original Macintosh personal computer. It is a yellow-beige box with a small rectangular screen and 3.5 inch floppy-disk drive slot on the front surface. The screen is on, and shows the grayscale interface of the Macintosh operating system." alt="The original Macintosh personal computer. It is a yellow-beige box with a small rectangular screen and 3.5 inch floppy-disk drive slot on the front surface. The screen is on, and shows the grayscale interface of the Macintosh operating system."  /&gt;
 ]]
 .column.bg-main2[.content.vmiddle[
     ![](images/floppy.jpg)
 ]]
 .column.bg-main3[.content.vmiddle[
-```{r, echo = FALSE, collapse = TRUE}
-#| fig.alt = "Surprised Pikachu face. A yellow pokemon with sharp ears tipped in black and red cheeks has its mouth open in a look of surprise."
-knitr::include_graphics("images/surprised_pikachu.png")
-```
+&lt;img src="images/surprised_pikachu.png" title="Surprised Pikachu face. A yellow pokemon with sharp ears tipped in black and red cheeks has its mouth open in a look of surprise." alt="Surprised Pikachu face. A yellow pokemon with sharp ears tipped in black and red cheeks has its mouth open in a look of surprise."  /&gt;
 ]]
 
 ---
@@ -234,7 +174,7 @@ One of my favorite examples of a practice in good documentation is the Lab Manua
 * Lab practices, academic culture, campus resources, logistical information
 
 .center[![:scale 25%](images/quote-Aly.png)
-*-Mariam Aly* <br /> .small[https://www.nature.com/articles/d41586-018-06167-w]]
+*-Mariam Aly* &lt;br /&gt; .small[https://www.nature.com/articles/d41586-018-06167-w]]
 
 ---
 ## Basic Elements of Lab Manuals
@@ -258,7 +198,7 @@ One of my favorite examples of a practice in good documentation is the Lab Manua
 * Engagement
 * How to Run Experiments
 * Data Analysis
-* Publications & Authorship
+* Publications &amp; Authorship
 * Conferences
 * Money
 * Offboarding
@@ -379,10 +319,7 @@ There are many different aspects of research that could be more open and reprodu
 It may seem like there are many options, and you have decision paralysis, and that you have to do everything on your own, but that isn't the case!
 
 ---
-```{r, echo = FALSE, collapse = TRUE}
-#| fig.alt = "Adapted image from The Legend of Zelda. A pixelated video game screenshot shows a bearded wiseman in a cave surrounded by magical fire on the left and right telling the hero: 'It's dangerous to go alone! Take This.' Instead of a sword, the hero is holding up the logos for ReproducibiliTea, The Carpentries, ReproHack, and R4E."
-knitr::include_graphics("images/its-dangerous-to-go-alone.jpg")
-```
+&lt;img src="images/its-dangerous-to-go-alone.jpg" title="Adapted image from The Legend of Zelda. A pixelated video game screenshot shows a bearded wiseman in a cave surrounded by magical fire on the left and right telling the hero: 'It's dangerous to go alone! Take This.' Instead of a sword, the hero is holding up the logos for ReproducibiliTea, The Carpentries, ReproHack, and R4E." alt="Adapted image from The Legend of Zelda. A pixelated video game screenshot shows a bearded wiseman in a cave surrounded by magical fire on the left and right telling the hero: 'It's dangerous to go alone! Take This.' Instead of a sword, the hero is holding up the logos for ReproducibiliTea, The Carpentries, ReproHack, and R4E."  /&gt;
 
 ---
 # Existing University Support Structures
@@ -524,7 +461,128 @@ No, don't become a supervillain.
 ---
 class: center, middle
 
-```{r, echo = FALSE, out.width = "50%", collapse = TRUE}
-#| fig.alt = "A tan and white retriever is sitting on a gray ottoman and looking up at the camera. He has a fluffy tail and is dangling his front paws over the front edge of the ottoman. The expression on his face is one of expecting trick or treats."
-knitr::include_graphics("images/falafel.jpg")
-```
+&lt;img src="images/falafel.jpg" title="A tan and white retriever is sitting on a gray ottoman and looking up at the camera. He has a fluffy tail and is dangling his front paws over the front edge of the ottoman. The expression on his face is one of expecting trick or treats." alt="A tan and white retriever is sitting on a gray ottoman and looking up at the camera. He has a fluffy tail and is dangling his front paws over the front edge of the ottoman. The expression on his face is one of expecting trick or treats." width="50%" /&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
