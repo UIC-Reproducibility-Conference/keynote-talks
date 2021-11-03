@@ -26,7 +26,7 @@ You will then see `slides_02_Hao.html`. Open this files in a web browser, and yo
 |date | time | person | talk title | primary file |
 |-----|------|--------|------------|--------------|
 |Tuesday, November 2, 2021| 1300 CT / 1400 ET | Vicky | Reproducibility is a means to an end | [script_01_Vicky.md](script_01_Vicky.md) |
-|Wednesday, November 3, 2021| 0900 CT / 1000 ET | Hao | Open reproducible scholarship: How do we get there? | [slides](https://uic-reproducibility-conference.github.io/keynote-talks/slides_02_Hao.html) <br /> [resources](resources_02_Hao.md)|
+|Wednesday, November 3, 2021| 0900 CT / 1000 ET | Hao | Open reproducible research: How do we get there? | [slides](https://uic-reproducibility-conference.github.io/keynote-talks/slides_02_Hao.html) <br /> [resources](resources_02_Hao.md)|
 
 ## Team
 

@@ -1,12 +1,11 @@
 # Resources for Open & Reproducible Research
 
 Hao Ye
-(to accompany "Open reproducible scholarship: How do we get there?", 2021 Nov 3 talk)
-
+(to accompany "Open reproducible research: How do we get there?", 2021 Nov 3 talk)
 
 # Self-guided Skill Development
 
-## Compilations
+## General Skill Compilation
 
 * [Reproducibility 4 Everyone Modules](https://www.repro4everyone.org/resources)
   - Basic overview of reproducibility practices across different research activities
@@ -85,16 +84,16 @@ Hao Ye
 * "Developing Collaborative Documents: Friendly Introduction to GitHub" [slides](https://docs.google.com/presentation/d/1_bmRZcLwQrUkVTAMvq7W_x4ML_aphSwVEnkLrDy-Fd4/edit?usp=sharing) and [video](https://youtu.be/QRUvQgKbVZQ)
   - from Open Life Science training materials on GitHub and GitHub Pages lesson
   
- * ["Understanding the GitHub flow"](https://guides.github.com/introduction/flow/)
+* ["Understanding the GitHub flow"](https://guides.github.com/introduction/flow/)
   - GitHub documentation for a workflow for collaborative teams using Git branches and GitHub pull requests
   
- * ["Happy Git and GitHub for the useR"](https://happygitwithr.com/)
+* ["Happy Git and GitHub for the useR"](https://happygitwithr.com/)
   - Detailed instructions and workflows for installing Git, connecting it with GitHub, and configuring RStudio to work with Git and GitHub
 
 ## Licensing Open Work
 
 * ["Choose an Open Source License"](https://choosealicense.com/)
-  - A guide for selecting an open source license
+  - A guide for selecting an open license for sharing research objects
 
 ## Lab Manuals
 
@@ -104,33 +103,51 @@ Hao Ye
 * [Example Lab Manuals](https://docs.google.com/spreadsheets/d/1kn4A0nR4loUOSDn9Qysd3MqFJ9cGU91dCDM6x9aga-8/edit#gid=0)
   - List of example lab manuals
 
-* [Basic Contents of Lab Manuals](https://twitter.com/samuelmehr/status/1139733291899080705)
+* [Basic Elements of Lab Manuals](https://twitter.com/samuelmehr/status/1139733291899080705)
   - twitter thread from Samuel Mehr on common elements in academic lab manuals
  
-## Training Programs
+## Mentorship Programs
 
-* [Openscapes](https://www.openscapes.org/)
-  - mentorship program led by Julie Lowndes and Erin Robinson to train research groups in open data science
+* [OpenScapes](https://www.openscapes.org/)
+  - mentorship program from Julie Lowndes and Erin Robinson
+  - 5-month Champions program for research lab groups (focusing on environmental science and data science)
 
 * [Open Life Science](https://openlifesci.org/)
-  - mentorship program led by Bérénice Batut, Malvika Sharan, and Yo Yehudi to train life science researchers on open practices related to a new or ongoing project
+  - mentorship program from Bérénice Batut, Malvika Sharan, and Yo Yehudi
+  - 16-week program for individuals or small group projects (open-science related (mostly life sciences))
 
 # Communities
 
-* [Software Sustainability Institute](https://www.software.ac.uk/)
-  - UK institute devoted to improving research software
-  
+## Reproducibility Affinity Groups
+
 * [ReproducibiliTea](https://reproducibilitea.org/)
-  - Distributed journal clubs that discuss papers in open science and reproducibility
+  - Globally-distributed, local journal club chapters to discuss open science and reproducibility
 
-* [Berkeley Initiative for Transparency in the Social Sciences](https://www.bitss.org/)
-  - group working to advance transparency, reproducibility, rigor, and ethics in research
-  
-* [Framework for Open and Reproducible Research Training](https://forrt.org/)
-  - group focusing on embedding reproducibility in teaching and mentoring
-  
-* [Society for the Improvement of Psychological Science](http://improvingpsych.org/)
-  - group working to improve methods and practices in psychological science
+* [ReproHack](https://www.reprohack.org/)
+  - Hackathons to practice reproducing published research  
+  - Note: [Nov 18. launch of ReproHack Hub](https://www.reprohack.org/event/11/)
 
-* [Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology](https://www.sortee.org/)
-  - group working to improve reliability and transparency through cultural and institutional changes in ecology and evolutionary biology
+* [BITSS](https://www.bitss.org/)
+  - Berkeley Initiative for Transparency in the Social Sciences
+
+## Research Software Affinity Groups
+
+* [PyOpenSci](https://www.pyopensci.org/)
+  - Python packages for open and reproducible research
+  
+* [ROpenSci](https://ropensci.org/)
+  - R packages for open and reproducible research
+
+* [Software Sustainability Institute](https://www.software.ac.uk/)  
+  - Practices for better research software
+
+## Advocacy Groups
+
+* [SIPS](http://improvingpsych.org/)
+  - Society for the Improvement of Psychological Science
+  
+* [SORTEE](https://www.sortee.org/)
+  - Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology
+
+* [FORRT](https://forrt.org/)
+  - Framework for Open and Reproducible Research Training (embedding reproducibility in basic research training)
