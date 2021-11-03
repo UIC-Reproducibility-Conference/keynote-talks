@@ -365,7 +365,7 @@ class: inverse, center, middle
 ---
 # Research Activities
 
-.center[*{insert infographic of your choice}*]
+.center[*{insert "Research Cycle" graphic of your choice}*]
 
 There are many different aspects of research that could be more open and reproducible:
 * research design
