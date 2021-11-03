@@ -104,13 +104,13 @@ I wish I could say that I have a straightforward plan, but that would be a lie.
 layout: true
 class: split-three
 
-.row.bg-blue1[.content[
+.row.bg-blue1[.content.vmiddle[
 .large[Researchers ask different questions and solve different problems.]
 ]]
-.row.bg-blue2[.content[
+.row.bg-blue2[.content.vmiddle[
 .large[Researchers have different approaches, methods, and modes of work.]
 ]]
-.row.bg-blue3[.content[
+.row.bg-blue3[.content.vmiddle[
 .large[There is no one-size-fits-all solution!]
 ]]
 
@@ -278,36 +278,46 @@ And including Equitable
 * Is the research object shared following ethical principles? (being mindful of PII, potential harmful impacts, etc.)
 
 ---
+# Lab Manuals
+
+* Share institutional/organizational knowledge
+* Reduced barriers for academic "Hidden Curriculum"
+
+
+![:scale 20%](images/quote-Aly.png)
+.small[ -Mariam Aly <br /> https://www.nature.com/articles/d41586-018-06167-w]
+
+---
+# Creating a Lab Manual
+
+* [template]
+
+---
 class: inverse, center, middle
 
 # Getting Started
 
 ---
-# Research Activities are very diverse
 
-There are both accepted and ongoing work to bring openness and reproducibility to different aspects of research, including:
+There are many different aspects of research that could be more open and reproducible:
 * research design
-* data
-* code, analysis, methods
+* data collection and management
+* experimental methods
+* computer code and analysis
 * publications
 
----
-# Materials
+???
 
-Reproducibility 4 Everyone
-The Carpentries
+It may seem like there are many options, and you have decision paralysis, and that you have to do everything on your own, but that isn't the case!
 
 ---
-# 
-
 ```{r, echo = FALSE, collapse = TRUE}
-#| fig.alt = "asdf"
+#| fig.alt = "Adapted image from The Legend of Zelda. A pixelated video game screenshot shows a bearded wiseman in a cave surrounded by magical fire on the left and right telling the hero: 'It's dangerous to go alone! Take This.' Instead of a sword, the hero is holding up the logos for ReproducibiliTea, The Carpentries, ReproHack, and R4E."
 knitr::include_graphics("images/its-dangerous-to-go-alone.jpg")
 ```
 
-
 ---
-# University Research Support
+# Existing University Support Structures
 
 * Librarians
 * Office Sponsored Research
@@ -321,26 +331,54 @@ knitr::include_graphics("images/its-dangerous-to-go-alone.jpg")
   You don't have to do everything yourself!
 * A group provides social norms and accountability.  
   Dedicated time/space for learning, and goal-setting.
-* Communities do not have be about reproducibility!  
-  Learning skills or specific tools is helpful, too.
-
----
-# ReproducibiliTea Journal Club
-
-
----
-# The Carpentries
-
----
-# R4DS Online Community
-
-
----
-# Reproducibility 4 Everyone
-
 
 ---
 class: center, middle
+
+# Learning Communities for Core Skills
+
+---
+layout: true
+class: split-three
+
+.row.bg-blue1[.split-two[
+  .column[.content.vmiddle[
+    ## [The Carpentries](https://carpentries.org/)
+  ]]
+  .column[.content.vmiddle[
+    Workshops for essential data and computational skills
+  ]]
+]]
+.row.bg-blue2[.split-two[
+  .column[.content.vmiddle[
+    ## [Reproducibility 4 Everyone](https://repro4everyone.org/)
+  ]]
+  .column[.content.vmiddle[
+    Workshops for reproducible research practices
+  ]]
+]]
+.row.bg-blue3[.split-two[
+  .column[.content.vmiddle[
+    ## [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
+  ]]
+  .column[.content.vmiddle[
+    Weekly event from the R4DS Online Learning Community to practice data wrangling and data visualization.
+  ]]
+]]
+---
+count: false
+
+---
+layout: false
+# Mentorship
+
+OpenScapes
+OpenLifeScience
+
+
+---
+layout: false
+class: inverse, center, middle
 
 # What about culture change?
 
@@ -369,21 +407,6 @@ Where can you find allies?
   - shared values and working towards a common vision
   - shared objective and you can achieve a win-win outcome
 
----
-# Lab Manuals
-
-* Share institutional/organizational knowledge
-* Reduced barriers for academic "Hidden Curriculum"
-
-
-![:scale 20%](images/quote-Aly.png)
-.small[ -Mariam Aly <br /> https://www.nature.com/articles/d41586-018-06167-w]
-
----
-# Creating a Lab Manual
-
-* [template]
-
 
 ---
 # Finding more power
@@ -399,50 +422,132 @@ Where can you find allies?
 **Collective action is a solution to limited individual power.**
 
 ---
-# Implementation Actions
+layout: false
+class: center, middle
 
-Different levels of scale
-* personal -> lab group -> field / professional society -> all of research
----
-# Avenues for Advocacy
-
-* Professional Societies (e.g. SIPS)
-* Journals
-* Other groups (e.g. FORRT, SORTEE)
-
-Guiding Questions:
-* Are they creating standards?
-* Are the standards clear, verifiable, and enforced?
+# Reproducibility Affinity Groups
 
 ---
+layout: true
+class: split-three
 
-
-"Open source practices can shift power" - Abigail Cabunoc Mayes
+.row.bg-blue1[.split-two[
+  .column[.content.vmiddle[
+    ## [ReproducibiliTea](https://reproducibilitea.org/)
+  ]]
+  .column[.content.vmiddle[
+    Globally-distributed, local journal club chapters to discuss open science and reproducibility 
+  ]]
+]]
+.row.bg-blue2[.split-two[
+  .column[.content.vmiddle[
+    ## [ReproHack](https://www.reprohack.org/)
+  ]]
+  .column[.content.vmiddle[
+    Hackathons to practice reproducing published research
+    
+    [ReproHack Hub launch Nov 18](https://www.reprohack.org/event/11/)
+  ]]
+]]
+.row.bg-blue3[.split-two[
+  .column[.content.vmiddle[
+    ## [BITSS](https://www.bitss.org/)
+  ]]
+  .column[.content.vmiddle[
+    Berkeley Initiative for Transparency in the Social Sciences
+  ]]
+]]
+---
+count: false
 
 ---
+layout: false
+class: center, middle
 
-
-
-
----
-
----
-
-# What do you want to achieve?
-
-* Mastering skills and tools for reproducibility
-* Creating work that anyone can reproduce
-* Reproducibility as a career requirement (funding, publication, jobs)
+# Research Software Affinity Groups
 
 ---
+layout: true
+class: split-three
 
-Target specific skills and tools to learn and practice.
+.row.bg-blue1[.split-two[
+  .column[.content.vmiddle[
+    ## [PyOpenSci](https://www.pyopensci.org/)
+  ]]
+  .column[.content.vmiddle[
+    Python packages for open and reproducible research
+  ]]
+]]
+.row.bg-blue2[.split-two[
+  .column[.content.vmiddle[
+    ## [ROpenSci](https://ropensci.org/)
+  ]]
+  .column[.content.vmiddle[
+    R packages for open and reproducible research
+  ]]
+]]
+.row.bg-blue3[.split-two[
+  .column[.content.vmiddle[
+    ## [Software Sustainability Institute](https://www.software.ac.uk/)
+  ]]
+  .column[.content.vmiddle[
+    best practices for better research software
+  ]]
+]]
+---
+count: false
 
-Identify goals, and develop a plan. 
+class: center, middle
 
-Work from standards or help create standards
+# Advocacy Groups
 
+---
+layout: true
+class: split-three
 
+.row.bg-blue1[.split-two[
+  .column[.content.vmiddle[
+    ## [SIPS](http://improvingpsych.org/)
+  ]]
+  .column[.content.vmiddle[
+    Society for the Improvement of Psychological Science
+  ]]
+]]
+.row.bg-blue2[.split-two[
+  .column[.content.vmiddle[
+    ## [SORTEE](https://www.sortee.org/)
+  ]]
+  .column[.content.vmiddle[
+    Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology
+  ]]
+]]
+.row.bg-blue3[.split-two[
+  .column[.content.vmiddle[
+    ## [FORRT](https://forrt.org/)
+  ]]
+  .column[.content.vmiddle[
+    Framework for Open and Reproducible Research Training (embedding reproducibility in basic research training)
+  ]]
+]]
+---
+count: false
+---
+layout: false
+
+---
+# Summary
+
+1. There are many areas to focus on and different scales of change. Pick one!
+2. Document _everything_.
+3. Find friends to learn together.
+4. Bring allies to make culture change.
+
+--
+.center[
+**"Open source practices can shift power"**
+
+*- Abigail Cabunoc Mayes*
+]
 
 ---
 # Thanks
@@ -464,4 +569,20 @@ Once upon a time, I tried to replicate the results in a (computational) paper.
 * replicating papers is a lot of work (even when it requires no new experiments or data collection)
 * not having data and code is a huge waste of time
 * it is difficult to get replications published - journals, editors, and publishers are not always motivated
+
+---
+
+# What do you want to achieve?
+
+* Mastering skills and tools for reproducibility
+* Creating work that anyone can reproduce
+* Reproducibility as a career requirement (funding, publication, jobs)
+
+---
+
+Target specific skills and tools to learn and practice.
+
+Identify goals, and develop a plan. 
+
+Work from standards or help create standards
 
