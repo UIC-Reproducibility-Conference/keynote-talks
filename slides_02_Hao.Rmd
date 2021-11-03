@@ -522,3 +522,9 @@ No, don't become a supervillain.
 ]
 
 ---
+class: center, middle
+
+```{r, echo = FALSE, out.width = "50%", collapse = TRUE}
+#| fig.alt = "A tan and white retriever is sitting on a gray ottoman and looking up at the camera. He has a fluffy tail and is dangling his front paws over the front edge of the ottoman. The expression on his face is one of expecting trick or treats."
+knitr::include_graphics("images/falafel.jpg")
+```
